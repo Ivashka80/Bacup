@@ -47,7 +47,7 @@
 <details>
 
 ```
-rsync -a --exclude '.*' . /tmp/backup/
+rsync -ac --exclude '.*' . /tmp/backup/
 ```
 
 ![image](https://github.com/Ivashka80/Bacup/assets/121082757/40bb8c26-4d99-4bb9-8f60-a7015f35173b)
