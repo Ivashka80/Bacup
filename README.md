@@ -68,13 +68,14 @@ rsync -a --exclude '.*' . /tmp/backup/
 <details>
 
 ```
-!/bin/sh
-rsync -av --delete . /tmp/backup >> /var/log/crontab.log
+#!/bin/sh
+rsync -av --delete --exclude '.*' /home/chistov/ /tmp/backup >> /var/log/crontab.log
+
 ```
 
 *Конфиг crontab*
 
-![image](https://github.com/Ivashka80/Bacup/assets/121082757/5da1dba0-82b1-4063-b70c-e133a0f39a49)
+![image](https://github.com/Ivashka80/Bacup/assets/121082757/54cf7485-0146-4f19-a5e1-278b17aef5d5)
 
 *Проверка скрипта*
 
@@ -82,6 +83,9 @@ rsync -av --delete . /tmp/backup >> /var/log/crontab.log
 
 *Проверка логов*
 
+`tail /var/log/crontab.log`
+
+![image](https://github.com/Ivashka80/Bacup/assets/121082757/24691eda-5039-476c-b08c-8b01ea69887d)
 
 </details>
 
