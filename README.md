@@ -63,6 +63,29 @@ rsync -a --exclude '.*' . /tmp/backup/
 - На проверку направить файл crontab и скриншот с результатом работы утилиты.
 
 
+### Ответ
+
+<details>
+
+```
+!/bin/sh
+rsync -av --delete . /tmp/backup >> /var/log/crontab.log
+```
+
+*Конфиг crontab*
+
+![image](https://github.com/Ivashka80/Bacup/assets/121082757/5da1dba0-82b1-4063-b70c-e133a0f39a49)
+
+*Проверка скрипта*
+
+![image](https://github.com/Ivashka80/Bacup/assets/121082757/a5b15b06-4f97-48ee-a776-60c8bd3c2e17)
+
+*Проверка логов*
+
+
+</details>
+
+
 ---
 
 ## Задания со звёздочкой*
