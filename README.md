@@ -47,10 +47,10 @@
 <details>
 
 ```
-rsync -ac --exclude '.*' . /tmp/backup/
+rsync -av --delete --exclude '.*' /home/chistov/ /tmp/backup
 ```
 
-![image](https://github.com/Ivashka80/Bacup/assets/121082757/40bb8c26-4d99-4bb9-8f60-a7015f35173b)
+![image](https://github.com/Ivashka80/Bacup/assets/121082757/9b12c131-bf10-498c-afe2-d23b50780848)
 
 </details>
 
